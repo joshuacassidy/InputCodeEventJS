@@ -1,43 +1,60 @@
+var code = "src";
+var userinput = "";
+var position = code[userinput]
+var  CodePosition = 0;
 
-      var code = "src";
-      var userinput = "";
-      var position = code[userinput]
+function success() {
+  alert();
+  CodePosition = 0;
+}
 
-      var CodePosition = 0;
+document.addEventListener('keydown', function(e) {
+  var key = e.key;
 
-      document.addEventListener('keydown', function(e) {
+  // var userinput = code[CodePosition];
 
-        var key = e.key;
-        var userinput = code[CodePosition];
-         key === userinput ? CodePosition++ CodePosition === code.length ?  alert() : CodePosition = 0 : CodePosition = 0
-        // ((key == userinput ? CodePosition++
-        //   if (samCodePosition == code.length){
-        //     alert()}
-        //
-        //   : CodePosition = 0)
+key ==  code[CodePosition] ?  (function() {
+
+CodePosition++
+CodePosition === code.length ?  success() : null
+
+}())  : CodePosition = 0;
 
 
-      });
 
-      // var code = "src";
-      // var userinput = "";
-      // var position = code[userinput]
-      // var samCodePosition = 0;
-      // document.addEventListener('keydown', function(e) {
-      //   var key = e.key;
-      //
-      //   var userinput = code[samCodePosition];
-      //
-      //   if (key == userinput) {
-      //
-      //     samCodePosition++;
-      //
-      //     if (samCodePosition == code.length)
-      //       alert();
-      //       // if(alert()){
-      //       //   samCodePosition = 0;
-      //       //
-      //       // }
-      //   } else
-      //     samCodePosition = 0;
-      // });
+  
+
+
+
+
+//   var x = 1;
+// (function(x) {
+//   console.log(x);
+// }(x))
+//
+// var y = false;
+// !function(y) {
+//   console.log(y);
+// }(true)
+//
+//
+// if(alert()){
+//  userinput = "";
+//   CodePosition = 0;
+// }
+
+
+//   if (key == userinput) {
+//
+//      CodePosition++;
+//
+//     if ( CodePosition == code.length)
+//       alert();
+//       // if(alert()){
+//       //    CodePosition = 0;
+//       //
+//       // }
+//   } else{
+//      CodePosition = 0;
+// }
+});
